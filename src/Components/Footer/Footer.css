@@ -1,0 +1,136 @@
+.footer {
+  width: 100%;
+  background-color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(168, 163, 163);
+  padding: 2vw 0;
+  margin-top: 70px;
+}
+
+.footer-content {
+  width: 80%;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* padding: 2vw; */
+}
+
+.footer-content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  margin-right: 20%;
+}
+
+.logo .logo-name {
+  color: rgb(251, 190, 48);
+  font-size: 2.5vw;
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.logo .logo-slogan {
+  position: absolute;
+  left: 3.5vw;
+  bottom: 5px;
+  font-size: 1vw;
+  color: rgb(189, 183, 183);
+  padding: 0px 1vw;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.footer-content-center,
+.footer-content-right {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.6vw 0;
+  align-items: start;
+  /* border :2px solid red */
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+  font-size: 1.5vw;
+}
+
+.footer-content-center ul,
+.footer-content-right ul,
+.footer-content-left p,
+.copyright-text {
+  list-style-type: none;
+  font-size: 1.2vw;
+}
+
+hr {
+  background-color: rgb(83, 79, 79);
+}
+
+.copyright-text {
+  text-align: center;
+  background-color: #323232;
+  color: rgb(159, 153, 153);
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .footer-content-left{
+    gap: 5px;
+  }
+  .footer-content-left p {
+    display: none;
+  }
+  .footer-content-left .logo-name {
+    display: none;
+  }
+  .footer-content-center h2,
+  .footer-content-right h2 {
+    font-size: 13px;
+  }
+
+  .footer-content-center ul,
+  .footer-content-right ul,
+  .footer-content-left p,
+  .copyright-text {
+    list-style-type: none;
+    font-size: 13px;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .social-icons{
+    gap: 7px;
+  }
+  .footer-content-center{
+    gap: 10px;
+  }
+  .footer-content-right{
+    gap: 10px;
+  }
+}

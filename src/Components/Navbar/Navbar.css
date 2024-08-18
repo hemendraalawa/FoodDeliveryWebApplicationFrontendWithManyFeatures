@@ -1,0 +1,138 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw 5vw;
+    /* position: fixed;
+    z-index: 10; */
+
+}
+
+.logo .logo-name{
+    color: rgb(251, 190, 48);
+    padding: 1vw;
+    font-size: 2.5vw;
+    position: relative;
+}
+
+.logo .logo-slogan{
+    position: absolute;
+    left: 3.5vw;
+    bottom: 5px;
+    font-size: 1vw;
+    color: rgb(101, 97, 97);
+    padding: 0px 1vw;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 1.3vw;
+}
+
+.menu ul Link,a{
+    text-decoration: none;
+    color: black;
+}
+
+/* .menu ul li::after {
+  content: "";
+  left: 0;
+  bottom: -3px;
+  position: absolute;
+  border-bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: rgb(251, 190, 48);
+  transition: all ease-in .2s;
+}
+
+.menu ul li:hover::after{
+    width: 100%;
+} */
+
+.lgnSign{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lgnSign button{
+    padding: .5vw 1.5vw;
+    border-radius: 20px;
+    border: 1px solid grey;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    transition: all ease-in .2s;
+    /* animation: none; */
+}
+
+.lgnSign button:hover{
+    background-color: rgb(251, 190, 48);
+    color: white;
+    border: 1px solid white;
+}
+
+.search img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.cart img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.cart{
+    position: relative;
+}
+
+.cart .dot{
+    position: absolute;
+    background-color: rgb(251, 190, 48);
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+}
+
+.active{
+    border-bottom: 1.4px solid rgb(48, 48, 48);
+    /* transition: .2s ease; */
+}
+
+@media (max-width: 767px) {
+    .navbar .menu{
+        display: none;
+    }
+
+    .navbar {
+        padding: 8px 20px;
+        margin-top: 10px;
+    }
+
+    .navbar .logo h1{
+        font-size: 20px;
+        top: -4px;
+    }
+    .navbar .logo p{
+        display: none;
+    }
+    .lgnSign .search img , .cart img{
+        width: 20px;
+    } 
+    .btn1 button{
+        font-size:15px;
+        padding: 8px 12px;
+    }
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+   
+
+}

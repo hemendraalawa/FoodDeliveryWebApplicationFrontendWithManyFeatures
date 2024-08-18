@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-bg{
+    margin: 40px 0px;
+    height: 34vw;
+    background: url("./header_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    /* border-radius: 15px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.header .header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    bottom: 20px;
+    gap: 20px;
+    padding: 2vw;
+    width: 100%;
+}
+
+.header h2{
+    font-size: 4vw;
+    color: white;
+    animation: FadeIn 3s;
+}
+
+.header p {
+    font-size: 1.3vw;
+    color: white;
+    animation: FadeIn 2s;
+}
+
+ .header-content button{
+    padding: .5vw 1.5vw;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    transition: all ease-in .2s;
+    animation: FadeIn 2s;
+}
+
+.header-content button:hover{
+    background-color: rgb(251, 190, 48);
+    color: white;
+    border: none;
+}
+
+
+@media (max-width: 767px) {
+    
+    .header-bg{
+        margin: 25px 0px;
+        height: 230px;
+        background-size: cover;
+        width: 90%;
+        border-radius: 15px;
+    }
+    
+    .header h2{
+        font-size: 25px;
+        color: white;
+        animation: FadeIn 3s;
+    }
+    
+    .header p {
+       display: none;
+    }
+
+    .header-content button{
+        padding: 1vw 1.9vw;
+        font-size: 13px;
+    }
+}
